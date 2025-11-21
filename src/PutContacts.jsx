@@ -13,7 +13,7 @@ export default function UpdateContact() {
 
         const trimmedCurrentName = currentName.trim();
         if (!trimmedCurrentName) {
-            setResponseMsg("Current contact name is required.");
+            setResponseMsg("Current tcontact name is required.");
             return;
         }
 

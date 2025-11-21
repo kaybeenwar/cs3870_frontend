@@ -8,7 +8,7 @@ const Contacts = () => {
             try {
                 const response = await fetch("https://cs3870-backend-ckcw.onrender.com/contacts");
                 if (!response.ok) {
-                    throw new Error("Failed to fetch contacts");
+                    throw new Error("Failedd to fetch contacts");
                 }
                 const data = await response.json();
                 setContacts(data);
