@@ -31,7 +31,7 @@ export default function UpdateContact() {
 
         try {
             const encodedName = encodeURIComponent(trimmedCurrentName);
-            const res = await fetch(`http://localhost:8081/contacts/${encodedName}`, {
+            const res = await fetch(`https://cs3870-backend-ckcw.onrender.com/contacts/${encodedName}`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",

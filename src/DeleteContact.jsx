@@ -14,7 +14,7 @@ function DeleteContact() {
         try {
             const encodedName = encodeURIComponent(trimmedName);
             console.log("EncodeURIComponent :", encodedName);
-            const res = await fetch(`http://localhost:8081/contacts/${encodedName}`, {
+            const res = await fetch(`https://cs3870-backend-ckcw.onrender.com/contacts/${encodedName}`, {
                 method: "DELETE",
             });
             console.log("-"+encodedName+"-")
@@ -44,7 +44,7 @@ function DeleteContact() {
                     <input
                         type="text"
                         value={name}
-                        placeholder="e.g. Abraham Aldaco"
+                        placeholder="e.g. Brayan Kabore"
                         onChange={(e) => setName(e.target.value)}
                     />
                 </label>
